@@ -15,20 +15,7 @@
             text-decoration: underline;
         }
 
-        /* Skip link for better accessibility */
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #000;
-            color: #fff;
-            padding: 8px;
-            z-index: 100;
-        }
 
-        .skip-link:focus {
-            top: 0;
-        }
 
         header {
             background-color: #333;
@@ -110,9 +97,7 @@
             align-items: center;
         }
 
-        footer nav ul li {
-            margin: 5px 0;
-        }
+
 
         footer p {
             margin-top: 10px;
@@ -170,6 +155,8 @@
             footer {
                 padding: 20px;
             }
+
+
 
             section {
                 margin: 40px 0;
