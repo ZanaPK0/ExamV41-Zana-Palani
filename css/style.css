@@ -48,7 +48,6 @@
             margin: 20px 0;
             padding: 15px;
             background-color: #fff;
-            border: solid red 1px;
             box-shadow: 1 2px 5px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
@@ -59,6 +58,7 @@
             padding: 1rem;
             margin: 1rem;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            
         }
         
         .product-section img {
@@ -68,9 +68,7 @@
 
         .product-section article{
                 padding: 1rem;
-                border: solid red 1px;
-                background-color: #fdee1b;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                border: solid 1px black;
                 word-wrap: break-word; /* Ensures long words break and wrap to the next line */
                 max-width: 100%; /* Makes sure the container respects its parent's width */
                 max-height: 100%;
@@ -79,7 +77,7 @@
         }
 
         .product-section p{
-            margin: 0;
+            margin: 0.5rem;
         }
 
 
