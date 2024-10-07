@@ -2,7 +2,6 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.5;
             background-color: #f4f4f4;
         }
 
@@ -14,13 +13,11 @@
         a:hover {
             text-decoration: underline;
         }
-
-
-
+        
         header {
             background-color: #333;
             color: white;
-            padding: 10px;
+            padding: 1rem;
             text-align: center;
         }
 
@@ -51,35 +48,38 @@
             margin: 20px 0;
             padding: 15px;
             background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border: solid red 1px;
+            box-shadow: 1 2px 5px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
 
         .product-section {
             display: grid;
-            column-gap: 0.5rem;
-            grid-template-columns: 1fr;
+            gap: .5rem;
+            padding: 1rem;
+            margin: 1rem;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         }
         
         .product-section img {
-            width: 100%;
-            height: clamp(25%, 30%, 50%)
+            width: clamp(50%, 80%, 100%);
+            height: clamp(20%, 25%, 50%);
         }
 
         .product-section article{
-                padding: 15px;
-                background-color: #fff;
+                padding: 1rem;
+                border: solid red 1px;
+                background-color: #fdee1b;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
                 word-wrap: break-word; /* Ensures long words break and wrap to the next line */
-                overflow-wrap: break-word; /* Break long strings (e.g., URLs) */
                 max-width: 100%; /* Makes sure the container respects its parent's width */
+                max-height: 100%;
                 box-sizing: border-box; /* Includes padding and border in the width calculation */
-                margin-bottom: 20px; /* Add margin between articles to prevent overlap */
-                display: block;
+
         }
 
         .product-section p{
-            
+            margin: 0;
         }
 
 
@@ -87,8 +87,8 @@
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px;
-            margin-top: 20px;
+            padding: 0.8rem;
+            margin-top: 1.2rem;
         }
 
         footer nav ul {
@@ -100,7 +100,7 @@
 
 
         footer p {
-            margin-top: 10px;
+            margin-top: 0.7rem;
             font-size: 0.9rem;
         }
 
@@ -119,11 +119,6 @@
                 max-width: 800px;
                 margin: 0 auto;
             }
-
-            .product-section {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-            }
             
 
             footer nav ul {
@@ -137,29 +132,7 @@
         }
 
         @media (min-width: 768px) {
-            header {
-                padding: 20px;
-            }
-
-            main {
-                padding: 40px;
-                max-width: 1000px;
-            }
-
-            .product-section {
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
-                
-            }
-
-            footer {
-                padding: 20px;
-            }
 
 
-
-            section {
-                margin: 40px 0;
-                padding: 30px;
-            }
         }
+
