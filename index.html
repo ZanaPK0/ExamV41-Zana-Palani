@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brief description of your page for screen readers and SEO">
+    <title>Accessible Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Skip to Main Content link for keyboard and screen reader users -->
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <!-- Header with ARIA landmark roles -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Main Navigation">
+            <!-- Navigation links would go here -->
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area with appropriate ARIA role -->
+    <main id="main-content" role="main">
+        <section aria-labelledby="main-heading">
+            <h1 id="main-heading">Welcome to the Website</h1>
+        </section>
+    </main>
+
+
+    <section><h2 id="articles-heading">The real deal Graphics</h2></section>
+
+
+    <!-- Section with articles -->
+    <section  class="product-section" aria-labelledby="articles-heading">
+
+        <article aria-labelledby="article-1-title">
+            <h3 id="article-1-title">3000 Series</h3>
+            <img src="graphics/3060.jpg" alt="3060">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, libero?</p>
+        </article>
+        <article aria-labelledby="article-1-title">
+            <h3 id="article-1-title">3000 Series</h3>
+            <img src="graphics/3060ti.jpg" alt="3060ti">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, libero?</p>
+        </article>
+        <article aria-labelledby="article-1-title">
+            <h3 id="article-1-title">3000 Series</h3>
+            <img src="graphics/3070ti.jpg" alt="3070ti">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, libero?</p>
+        </article>
+        <article aria-labelledby="article-1-title">
+            <h3 id="article-1-title">3000 Series</h3>
+            <img src="graphics/3080ti.jpg" alt="3080ti">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, libero?</p>
+        </article>
+        <article aria-labelledby="article-1-title">
+            <h3 id="article-1-title">3000 Series</h3>
+            <img src="graphics/3090ti.jpg" alt="3090ti">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, libero?</p>
+        </article>
+        <article aria-labelledby="article-2-title">
+            <h3 id="article-2-title">4000 Series</h3>
+            <img src="graphics/4060.jpg" alt="4060">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, libero?</p>
+        </article>
+        <article aria-labelledby="article-2-title">
+            <h3 id="article-2-title">4000 Series</h3>
+            <img src="graphics/4060ti.jpg" alt="4060ti">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, libero?</p>
+        </article>
+        <article aria-labelledby="article-2-title">
+            <h3 id="article-2-title">4000 Series</h3>
+            <img src="graphics/4070super.jpg" alt="4070super">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, libero?</p>
+        </article>
+        <article aria-labelledby="article-2-title">
+            <h3 id="article-2-title">4000 Series</h3>
+            <img src="graphics/4080super.jpg" alt="4080super">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, libero?</p>
+        </article>
+        <article aria-labelledby="article-2-title">
+            <h3 id="article-2-title">4000 Series</h3>
+            <img src="graphics/4090.webp" alt="4090">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, libero?</p>
+        </article>
+    </section>
+
+    <!-- Footer with ARIA role -->
+    <footer role="contentinfo">
+        <p>&copy; 2024 Your Website</p>
+        <nav aria-label="Footer Navigation">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
