@@ -76,7 +76,7 @@
         
         .product-section img {
             width: 100%;
-            height: 50%;
+            height: clamp(25%, 30%, 50%)
         }
 
         .product-section article{
@@ -87,6 +87,12 @@
                 overflow-wrap: break-word; /* Break long strings (e.g., URLs) */
                 max-width: 100%; /* Makes sure the container respects its parent's width */
                 box-sizing: border-box; /* Includes padding and border in the width calculation */
+                margin-bottom: 20px; /* Add margin between articles to prevent overlap */
+                display: block;
+        }
+
+        .product-section p{
+            
         }
 
 
@@ -158,6 +164,7 @@
             .product-section {
                 display: grid;
                 grid-template-columns: repeat(5, 1fr);
+                
             }
 
             footer {
