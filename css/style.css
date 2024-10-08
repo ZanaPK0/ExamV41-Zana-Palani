@@ -68,10 +68,14 @@
             
         }
         
+        .product-section article h3 {
+            text-align: center;
+        }
+
         .product-section img {
             width: clamp(40%, 50%, 100%);
-            height: clamp(20%, 25%, 50%);
-            
+            grid-row: 2 / 4;
+            justify-self: center;
         }
 
         .product-section article{
@@ -82,19 +86,29 @@
                 max-height: 100%;
                 box-sizing: border-box; /* Includes padding and border in the width calculation */
                 overflow: auto;
+                display: grid;
+                /* Här använder jag mig av subgrid templare rows för att placera buy-btn längst nere på alla produkter */
+                grid-template-rows: subgrid;
+                grid-row: span 6;
+
 
         }
 
+
+
         .product-section p{
             margin: 0.5rem;
-
+            grid-row: 4 / 5;
+            text-align: center;
             
         }
 
         .product-price {
             font-size: 1.4em;
             color: #ff0000;
-            margin-bottom: 15px;
+            margin-bottom: 1rem;
+            grid-row: 5 / 6;
+            text-align: center;
         }
 
         .buy-btn {
@@ -105,6 +119,8 @@
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
+            grid-row: 6 / 7;
+            text-align: center;
         }
 
         .buy-btn:hover {
