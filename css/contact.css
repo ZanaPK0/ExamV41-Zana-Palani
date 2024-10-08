@@ -1,11 +1,17 @@
 
 * {
-    margin: 0;
-    padding: 0;
+
     box-sizing: border-box;
 }
 
 body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
@@ -14,25 +20,61 @@ body {
     height: 100vh;
 }
 
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Mobile-first: stack nav items vertically */
+    align-items: center;
+}
+
+nav ul li {
+    margin: 1rem 0;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+
 .contact-container {
     background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
+    padding: 2rem;
+    border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 400px;
+    max-width: 25rem;
     width: 100%;
+    
 }
 
 h1 {
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 0.2rem;
     color: #333;
 }
 
 p {
     font-size: 1.1em;
-    margin: 10px 0;
+    margin: 0.7rem 0;
     color: #555;
 }
 
@@ -46,9 +88,53 @@ p {
 }
 
 .contact-info {
-    margin-top: 20px;
+    margin-top: 1.2rem;
 }
 
 .contact-info p {
-    font-size: 1.2em;
+    font-size: clamp(1em, 1.2em, 1.4em);
 }
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.8rem;
+    margin-top: 1.2rem;
+}
+
+footer p {
+    color: white;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+footer p {
+    margin-top: 0.7rem;
+    font-size: 0.9rem;
+}
+
+        /* Media Queries for larger screens (e.g., tablets, desktops) */
+        @media (min-width: 425px) {
+            nav ul {
+                flex-direction: row; /* Switch to horizontal nav for larger screens */
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 0 1rem;
+            }
+
+        
+            footer nav ul {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+        }

@@ -7,14 +7,41 @@
     <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
-    <div class="contact-container"></div>
+
+        <!-- Header with ARIA landmark roles -->
+        <header role="banner">
+            <nav role="navigation" aria-label="Main Navigation">
+                <!-- Navigation links would go here -->
+                <ul>
+                    <li><a href="index.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+<main>
+    <section class="contact-container">
         <h1>Your Company Name</h1>
         <p>If you have any questions, feel free to reach out to us!</p>
         
-        <div class="contact-info">
+        <article class="contact-info">
             <p><strong>Email:</strong> <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
             <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
-        </div>
-    </div>
+        </article>
+    </section>
+</main>
+
+    <!-- Footer with ARIA role -->
+    <footer role="contentinfo">
+        <p>&copy; 2024 Your Website</p>
+        <nav aria-label="Footer Navigation">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+
 </body>
 </html>
