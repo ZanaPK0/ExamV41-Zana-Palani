@@ -8,7 +8,8 @@ https://github.com/ZanaPK0/examv41
 4. Open VS Code.
 5. Clone repository with the help of the link.
 6. You now have access to the content.
-
+7. Open the index.html with live server.
+8. Navigate between the two pages by clicking Products or Contact.
 
 
 Hemsidan är en produktsida för Grafikkort.
