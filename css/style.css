@@ -51,12 +51,14 @@
             box-shadow: 1 2px 5px rgba(0, 0, 0, 0.1);
             text-align: center;
             border-radius: 1rem;
+            font-family: cursive;
         }
 
         .section-h2{
             color: red;
             box-shadow: 1 2px 5px rgba(0, 0, 0, 0.1);
             text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
         }
 
         .product-section {
