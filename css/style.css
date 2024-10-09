@@ -91,10 +91,12 @@
                 /* Här använder jag mig av subgrid templare rows för att placera buy-btn längst nere på alla produkter */
                 grid-template-rows: subgrid;
                 grid-row: span 6;
-
-
+                box-shadow: 3px 3px 10px;
         }
 
+        .product-section article:hover{
+            border: solid 2px red;
+        }
 
 
         .product-section p{
